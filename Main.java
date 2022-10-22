@@ -1,15 +1,17 @@
-package trashBin;
+package jar;
 
 public class Main {
 
 	public static void main(String[] args) {
-		bin myBin = new bin(20);
-		myBin.thrw(2);
-		myBin.thrw(15);
-		myBin.thrw(4);
-		myBin.empty();
-		myBin.thrw(2);
-		myBin.thrw(2);
+		Jar myJar = new Jar(10);
+		myJar.openLid();
+		myJar.addMarbel(5);
+		myJar.addMarbel(5);
+		myJar.addMarbel(1);
+		myJar.closeLid();
+		myJar.remove(10);
+		myJar.openLid();
+		myJar.remove(10);
 	}
 
 }
